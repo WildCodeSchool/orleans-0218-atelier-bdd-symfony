@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Person by gender</h1>
+    {% for person in persons %}
+        {{ person.firstname }} {{ person.name }}
+        {{ person.gender }}
+        {{ person.kingdom.name }}
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ person.firstname }} {{ person.name }}</h1>
+    {{ person.gender }}
+    {% if person.kingdom.name is defined %}
+        {{ person.kingdom.name }}
+    {% endif %}
+{% endblock %}
